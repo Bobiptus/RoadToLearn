@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ultima practica de leccion 4</title>
+    <style>
+      .yellow-button{
+        background-color: yellow;
+        color: black;
+        border: solid;
+      }
+
+      .orange-button{
+        background-color: orange;
+        color: black;
+        border: solid;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Adults Plain Cotton T-shirt<br><br>
+      Price: $7.99<br><br>
+      <button tittle="Add to cart" class="orange-button" onclick="alert('Added')">Add to cart</button>
+      <button tittle="Buy now" class="yellow-button"
+       onclick="
+       alert('Loading...');
+       alert('Purchased');
+       ">Buy now</button>
+
+    </p>
+    <script>
+      function log(){
+        console.log("Purchased");
+      }
+    </script>
+  </body>
+</html>
