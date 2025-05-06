@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Objects</title>
+  </head>
+  <body>
+    <script>
+     const basketball = {
+        name: 'basketball',
+        price: 3995,
+      };
+
+      const soccer = {
+        name: 'SOCCER',
+        price: 2995,
+      };
+
+      function comparaPrecios(precio1, precio2){
+        if (precio1.price > precio2.price){
+          console.log(`El ${precio1.name} mas caro que el de ${precio2.name}`);
+        } else if (precio1.price < precio2.price){
+          console.log(`El ${precio1.name} mas barato que el de ${precio2.name}`);
+        } else {
+          console.log('Ambos balones tienen el mismo precio');
+        }
+      }
+
+      function isSameProduct(product1, product2){
+        if (product1.name === product2.name && product1.price === product2.price){
+          console.log('Son el mismo producto');
+        } else {
+          console.log('No son el mismo producto');
+        }
+      }
+      
+      /*
+      basketball.price += 500;
+      basketball['delivery-time'] = '3 days';
+      console.log(`Producto: ${basketball.name}\nPrecio: ${basketball.price}\nTiempo de entrega: ${basketball['delivery-time']}`);
+      */
+
+      cadenaLow = soccer.name.toLowerCase();
+
+      console.log(cadenaLow);
+      comparaPrecios(basketball, soccer);
+      isSameProduct(basketball, soccer);
+    </script>
+    </body>
+</html>
